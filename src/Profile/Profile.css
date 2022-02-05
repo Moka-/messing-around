@@ -1,0 +1,32 @@
+@import "~antd/dist/antd.css";
+
+.container {
+  margin: 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 360px;
+  gap: 32px;
+  grid-auto-flow: row;
+}
+
+.tabs {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.products {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.agents {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.basic-info {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.timeline {
+  grid-area: 2 / 3 / 3 / 4;
+}
